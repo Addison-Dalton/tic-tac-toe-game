@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Tic-Tac-Toe Game</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+<link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Raleway'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  <div id="tic-tac-toe" class="container"><!--content wrapper-->
+  
+  <div id="top-bar" class="row top-bar"><!--top bar-->
+    <div class="col-xs-12"><!--score-->
+      <button id="reset-btn">Reset</button>
+      <br>
+      <h4 id="player-score">Player Score</h4>
+      <h4 id="computer-score">Computer Score</h4>
+      <div class="row">
+        <div class="col-xs-4">
+          <h4 id="player-score-num">0</h4>
+        </div>
+        <div class="col-xs-4">
+          <h4 id="computer-score-num">0</h4>
+        </div>
+      </div>
+    </div><!--score end-->
+  </div>
+  <div class="row"><!--tic tac toe table-->
+    <div class="col-xs-12 text-center">
+      <div id="tic-tac-board">
+        <table class="small-xo">
+          <tr id="top-row">
+            <td class="cell">
+              <button id="top1" class="cell-btn"></button>
+            </td>
+            <td class="cell mid-vert">
+              <button id="top2" class="cell-btn"></button>
+            </td>
+            <td class="cell">
+              <button id="top3" class="cell-btn"></button>
+            </td>
+          </tr>
+          <tr id="mid-row" class="mid-hori">
+            <td class="cell">
+              <button id="mid1" class="cell-btn"></button>
+            </td>
+            <td class="cell mid-vert">
+              <button id="mid2" class="cell-btn"></button>
+            </td>
+            <td class="cell">
+              <button id="mid3" class="cell-btn"></button>
+            </td>
+          </tr>
+          <tr id="bot-row">
+            <td class="cell">
+              <button id="bot1" class="cell-btn"></button>
+            </td>
+            <td class="cell mid-vert">
+              <button id="bot2" class="cell-btn"></button>
+            </td>
+            <td class="cell">
+              <button id="bot3" class="cell-btn"></button>
+            </td>
+          </tr>
+        </table>
+      </div><!--tic tac toe board end-->
+    </div>
+  </div><!--tic tac table end-->
+  
+  <div id="bot-bar" class="row text-center"><!--bottom bar-->
+    <div class="col-xs-6 turn-divider">
+      <h4 id="player-turn-label" class="your-turn">Player's Turn</h4>
+    </div>
+    <div class="col-xs-6">
+      <h4 id="comp-turn-label" class="opponents-turn">Computer's Turn</h4>
+    </div>
+  </div><!--bottom bar end-->
+</div><!-- game content end-->
+
+<div id="intro" class="container"><!--intro container-->
+  <div class="row"><!--title-->
+    <div class="col-xs-12 top-bar">
+      <h3 id="intro-title">Choose who you will play as:</h3>
+    </div>
+  </div><!--title end-->
+  <div class="row text-center short-border"><!--player choice-->
+    <div class="col-xs-6 intro-right-border">
+      <button id="x-btn" class="large-xo">X</button>
+    </div>
+    <div class="col-xs-6">
+      <button id="o-btn" class="large-xo">O</button>
+    </div>
+  </div><!--player choice end-->
+</div><!--intro container end-->
+<div class="text-center white-text">
+  <footer>By Addison Dalton</footer>
+</div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script>
+
+    <script  src="js/index.js"></script>
+
+</body>
+</html>
